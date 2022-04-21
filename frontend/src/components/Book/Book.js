@@ -17,9 +17,9 @@ const Book = (props) => {
     <div className="card">
       <img src={image} alt={name} />
       <article>By {author}</article>
-      <h3>{name}</h3>
+      <h5>{name}</h5>
       <p>{description}</p>
-      <h3>Rs {price}</h3>
+      <h6>Rs {price}</h6>
       <Button LinkComponent={Link} to={`/books/${_id}`} sx={{ mt: "auto" }}>
         Update
       </Button>

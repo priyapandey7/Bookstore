@@ -8,10 +8,13 @@ function Header() {
     <div>
       <AppBar sx={{backgroundColor:"#363e4d"}}
        position='sticky'> 
-      <Toolbar>
+       
+          <Toolbar>
+          <NavLink to='/' style={{color:"white"}}>
           <Typography>
             <LibraryBooksIcon/>
           </Typography>
+          </NavLink>
           <Tabs sx={{ml:"auto"}} 
            textColor='inherit' indicatorColor='secondary' value={value} onChange={(e,val) =>setValue(val)}>
               <Tab LinkComponent={NavLink} to='/add' label="Add Product" />

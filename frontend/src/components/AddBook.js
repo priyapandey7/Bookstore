@@ -18,7 +18,6 @@ const AddBook = () => {
     description: "",
     price: "",
     author: "",
-
     image: "",
   });
   const [checked, setChecked] = useState(false);
